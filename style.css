@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+header{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .6);
+  position: sticky;
+  top: 0px;
+  /* background: #3D0856; */
+  background: rgb(15, 173, 63);
+}
+
+.navbar{
+  min-height: 5vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul a{
+  text-decoration: none;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  letter-spacing: 3px;
+  margin-right: 150px;
+  
+}
+
+/* .navbar ul a:hover{
+  transform: scale(1.1);
+  display: inline-block;
+  transition: .2s ease-in;
+} */
+
+.logo {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.home{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./asset/s-bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: rgb(252, 0, 0);
+  text-align: center;
+  padding: 180px 0 100px 0;
+}
+
+.home h1{
+  /* opacity: .7; */
+  font-size: 70px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  margin-top: 150px;
+}
+
+.home p{
+  margin-bottom: 20px;
+  line-height: 25px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.home a{
+  text-decoration: none;
+}
+
+.btn-daftar{
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px 17px;
+  color: #fff;
+  display: inline-block;
+  opacity: .8;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #3D0856;
+  transition: .5s;
+}
+
+.btn-daftar:hover{
+  opacity: 1;
+}
+
+.about{
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: url(./asset/bg.jpg);
+  background-size: cover;
+  background-position: center; */
+  background: rgb(224, 23, 23);
+  color: #fff;
+  text-align: left;
+  padding: 100px 0 100px 0;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.container h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container p{
+  text-indent: 40px;
+  margin-bottom: 20px;
+}
+
+.tabel{
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: .9rem;
+  width: 80%;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+}
+
+.tabel thead tr{
+  background-color: #3D0856;
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tabel th, .tabel td{
+  padding: 5px 15px;
+}
+
+.tabel tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+
+.tabel tbody tr:nth-child(even){
+  background-color: #3f2d47;
+}
+
+.tabel tbody tr:last-of-type{
+  border-bottom: 2px solid #3D0856;
+}
+
+.tabel tbody tr:hover{
+  color: #b8aabe;
+  cursor: pointer;
+}
+
+.misi li:last-of-type{
+  margin-bottom: 30px;
+}
+
+/* .pelajari{
+  height: 100vh;
+} */
+
+.prostu{
+  margin: 30px auto;
+  text-align: center;
+}
+
+.containers{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.makul-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  border: 1px solid none;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .6);
+  height: 300px;
+  width: 300px;
+}
+.makul-icon img{
+  width: 100px;
+  margin: auto;
+}
+
+.judul{
+  font-size: 40px;
+}
+
+.jurusan{
+  margin-bottom: 20px;
+}
+
+.contact{
+  background-color: yellow;
+  color: black;
+  height: 300px;
+  text-align: left;
+}
+
+.tcontact{
+  margin: 40px auto;
+  text-align: center;
+}
+
+.tborder{
+  border-bottom: 1px solid #333;
+}
+
+.tcontact td{
+  padding-bottom: 8px;
+}
+
+.normal{
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+
+/* footer */
+.footer{
+  height: 100px;
+  background-color:green;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.footer p{
+  margin: 40px 20px 20px;
+}
+
+.sosmed{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.sosmed a{
+  display: inline-block;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+/* responsive  */
+
+@media all and (max-width:1000px){
+  .home h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .home p{
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 670px){
+  .home h1{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .home p{
+    font-size: .9rem;
+  }
+
+  .about {
+    text-align: left;
+  }
+
+  .navbar ul a{
+    text-decoration: none;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    letter-spacing: 1px;
+    justify-content: space-evenly;
+  }
+
+  .tabel td{
+    text-align: center;
+  }
+
+  .tcontact{
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sosmed{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-top: 10px;
+    
+  }
+  
+  
+}
